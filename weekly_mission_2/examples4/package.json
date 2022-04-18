@@ -1,0 +1,21 @@
+{
+  "name": "Poke",
+  "version": "1.0.0",
+  "description": "",
+  "exports": {
+    ".": "./main.js",
+    "./package.json": "./package.json"
+  },
+  "type": "module",
+  "transform": {},
+  "scripts": {
+    "test": "jest",
+    "test:unit": "node --experimental-vm-modules ./node_modules/.bin/jest"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "jest": "^27.5.1"
+  }
+}
