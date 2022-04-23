@@ -13,5 +13,9 @@ class UserService {
     user.username = new_name;
     return user;
   }
+  static getAllUsernames(users) {
+    const usernames = users.map((user) => user.username);
+    return usernames;
+  }
 }
 module.exports = UserService;
