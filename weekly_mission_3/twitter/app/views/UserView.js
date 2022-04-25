@@ -1,4 +1,5 @@
-const UserService = require("./../services/UserService");
+const User = require("../models/User");
+const UserService = require("./../../app/services/UserService");
 
 class UserView {
   static createUser(payload) {
@@ -10,15 +11,17 @@ class UserView {
       return { error: "necesitan tener un valor valido" };
       // Para pasar el tercer test
     } else if (
-      !["username", "name", "id"].every((key) => key in Object.keys(payload))
+      !["username", "name", "id"].every((key) =>
+        Object.keys(payload).includes(key)
+      )
     ) {
       return { error: "necesitan tener un valor valido" };
     } else {
-      return UserService.create(
-        (id = payload.id),
-        (username = payload.username),
-        (name = payload.name)
-      );
+      return {
+        id: payload.id,
+        username: payload.username,
+        name: payload.name,
+      };
     }
   }
 }
