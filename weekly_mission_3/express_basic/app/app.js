@@ -13,6 +13,12 @@ app.get("/", (req, res) => {
 app.get("/launchx", (req, res) => {
   res.send("Welcome to launchX");
 });
+// Regresando un objeto
+// localhost:3000/explorersInNode
+app.get("/explorerInNode", (req, res) => {
+  const explorer = { name: "Explorer", msg: "Hello" };
+  res.send(explorer);
+});
 // Con esto inicializamos esta app
 app.listen(port, () => {
   console.log(`Example app listening on port ${port}`);
