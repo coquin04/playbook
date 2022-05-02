@@ -4,14 +4,15 @@ describe("Unit test for FizzbuzzService class.", () => {
     const explorer1 = { name: "Explorer1", score: 1 };
     const newExplorer1 = FizzbuzzService.applyValidationInExplorer(explorer1);
     //
-    const explorer3 = { name: "Explorer3", score: 1 };
+    const explorer3 = { name: "Explorer3", score: 3 };
     const newExplorer3 = FizzbuzzService.applyValidationInExplorer(explorer3);
     //
-    const explorer5 = { name: "Explorer5", score: 1 };
+    const explorer5 = { name: "Explorer5", score: 5 };
     const newExplorer5 = FizzbuzzService.applyValidationInExplorer(explorer5);
     //
-    const explorer15 = { name: "Explorer15", score: 1 };
+    const explorer15 = { name: "Explorer15", score: 15 };
     const newExplorer15 = FizzbuzzService.applyValidationInExplorer(explorer15);
+    //
     expect(newExplorer1).toStrictEqual({
       name: "Explorer1",
       score: 1,
