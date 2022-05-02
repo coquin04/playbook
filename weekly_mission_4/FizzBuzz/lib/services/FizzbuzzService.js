@@ -8,7 +8,8 @@ class FizzbuzzService {
     }
     if (explorer.score % 5 === 0 && explorer.score % 3 === 0) {
       explorer.trick = "FIZZBUZZ";
-    } else {
+    }
+    if (explorer.score % 5 !== 0 && explorer.score % 3 !== 0) {
       explorer.trick = explorer.score;
     }
     return explorer;
