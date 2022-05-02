@@ -1,4 +1,5 @@
 // Clase anterior con la que obtenemos los explorers
+const ExplorerService = require("./lib/services/ExplorerServices");
 const Reader = require("./lib/utils/Reader");
 const explorers = Reader.readJsonFile("./data/explorers.json");
 
