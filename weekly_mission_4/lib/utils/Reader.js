@@ -7,3 +7,4 @@ class Reader {
     return explorers;
   }
 }
+module.exports = Reader;
