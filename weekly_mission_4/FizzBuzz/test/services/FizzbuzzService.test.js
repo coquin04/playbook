@@ -21,7 +21,7 @@ describe("Unit test for FizzbuzzService class.", () => {
     expect(newExplorer3).toStrictEqual({
       name: "Explorer3",
       score: 3,
-      trick: "FIZZ",
+      trick: "FZ",
     });
     expect(newExplorer5).toStrictEqual({
       name: "Explorer5",
